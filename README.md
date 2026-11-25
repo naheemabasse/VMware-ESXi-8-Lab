@@ -27,8 +27,84 @@ Physical PC: Windows 10 Pro, Intel Core i5-7440HQ
          └─ Ubuntu Server 26.04.1 VM
 ```
 
-## Proof of Execution
-![ESXi original ui](./assets/exsi-vm.jpg)
+## 4. Proof of Execution
+![ESXi Direct Console UI](./assets/exsi-vm.jpg)
 <p align="center">
-  <em>ESXi Direct Console UI</em>
+  <em>ESXi Direct Console User Interface (DCUI)</em>
 </p>
+<br>
+<br>
+
+![ESXi Web UI Login](./assets/esxi-web-ui.jpg)
+<p align="center">
+  <em>ESXi Host Web Login</em>
+</p>
+<br>
+<br>
+
+![ESXi Host Management Interface](./assets/esxi-web-ui-2.jpg)
+<p align="center">
+  <em>ESXi Host Management Interface</em>
+</p>
+<br>
+<br>
+
+![ESXi Virtual Machines](./assets/esxi-web-ui-vm-section.jpg)
+<p align="center">
+  <em>Virtual Machines</em>
+</p>
+<br>
+<br>
+
+![ESXi Datastore](./assets/esxi-web-ui-ds-section.jpg)
+<p align="center">
+  <em>VMFS Datastore</em>
+</p>
+<br>
+<br>
+
+![Ubuntu Server Virtual Machine](./assets/esxi-web-ui-linux-vm.jpg)
+<p align="center">
+  <em>Ubuntu Server Running as a Guest Virtual Machine</em>
+</p>
+
+## 5. Troubleshooting
+#### 1. ESXi Management Network
+
+The ESXi host initially experienced DHCP connectivity issues. I reviewed the virtual network adapter configuration in VMware Workstation and adjusted the network settings to provide management connectivity.
+
+#### 2. Datastore Configuration
+After installation, the expected datastore was not immediately available. The ESXi virtual disk was initially configured with 32 GB of capacity.
+The virtual disk was expanded to 64 GB, after which the additional storage became available for datastore configuration.
+I formatted the additional 32 GB of available space as a VMFS datastore.
+VMFS (Virtual Machine File System) is VMware's file system used to store virtual machine files, including virtual disks and configuration files.
+
+#### 3. Nested Virtualization
+
+The Ubuntu Server VM initially encountered a virtualization compatibility issue related to a conflict with the, also running on the machine, Hyper-V hypervisor. I reviewed the nested virtualization settings and resolved the configuration issue, allowing Ubuntu Server to run inside ESXi.
+
+## 6. Limitations
+The current lab is designed for learning and demonstration purposes. The environment has the following limitations:
+- The lab currently uses standalone ESXi management, due to lack of resources to practice the full vSphere platform.
+- ESXi runs on top of a VM rather than directly on physical hardware.
+- The physical host is a regular laptop and has limited memory and storage resources.
+- vCenter Server has not been deployed.
+
+These limitations are documented to distinguish the current implementation from a production virtualization environment.
+
+## 7. Future Improvements
+Possible extensions to the lab include:
+- Deploying vCenter Server when sufficient hardware resources are available.
+- Adding more ESXi hosts and practice other features such as vMotion, etc.
+- Explore virtual networking.
+- Exploring shared storage concepts.
+- Implementing monitoring and resource utilization tracking.
+- Explore backup and recovery procedures. 
+<br>
+
+## 8. Author
+This lab was built as part of my practical learning in ***Network, Infrastructure, Systems and Security Administration***. <br><br>
+**Naheem Abasse**
+- Phone: [+258 86 720 5050](tel:+258867205050)
+- Email: [naheem.abasse87@gmail.com](mailto:naheem.abasse87@gmail.com)
+- GitHub: [@naheemabasse](https://github.com/naheemabasse)

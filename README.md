@@ -28,5 +28,7 @@ Physical PC: Windows 10 Pro, Intel Core i5-7440HQ
 ```
 
 ## Proof of Execution
-![ESXi Web UI and VMFS Datastore](./assets/esxi-vmfs-ui.png)
-*Caption: ESXi Host Client showing active host status, VMFS datastore, and the Ubuntu Server VM.*
+![ESXi original ui](./assets/exsi-vm.jpg)
+<p align="center">
+  <em>ESXi Direct Console UI</em>
+</p>

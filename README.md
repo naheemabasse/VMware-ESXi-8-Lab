@@ -125,7 +125,6 @@ Possible extensions to the lab include:
 - Exploring shared storage concepts.
 - Implementing monitoring and resource utilization tracking.
 - Explore backup and recovery procedures. 
-<br>
 
 ## 8. Author
 This lab was built as part of my practical learning in ***Network, Infrastructure, Systems and Security Administration***. <br><br>

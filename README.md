@@ -128,7 +128,7 @@ Possible extensions to the lab include:
 
 ## 8. Author
 This lab was built as part of my practical learning in ***Network, Infrastructure, Systems and Security Administration***. <br><br>
-**Naheem Abasse**
+**Naheem Abasse** - Computer Science and Engineering Student @ ISUTC
 - Phone: [+258 86 720 5050](tel:+258867205050)
 - Email: [naheem.abasse87@gmail.com](mailto:naheem.abasse87@gmail.com)
 - GitHub: [@naheemabasse](https://github.com/naheemabasse)

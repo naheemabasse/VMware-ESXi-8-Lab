@@ -3,6 +3,16 @@
 
 ## Table of Contents
 
+- [1. Overview](#1-overview)
+- [2. Objectives](#2-objectives)
+- [3. Architecture](#3-architecture)
+- [4. Proof of Execution](#4-proof-of-execution)
+- [5. Troubleshooting](#5-troubleshooting)
+- [6. Limitations](#6-limitations)
+- [7. Future Improvements](#7-future-improvements)
+- [8. Author](#8-author)
+
+
 ## 1. Overview
 This project documents the deployment and administration of a VMware ESXi virtualization environment running as a nested hypervisor inside a VMware Workstation VM.
 Configured ESXi and browser-based management, provisioned a VMFS datastore, and deployed an Ubuntu Server 26.04.1 virtual machine on top of it.
@@ -31,6 +41,13 @@ Physical PC: Windows 10 Pro, Intel Core i5-7440HQ
 ![ESXi Direct Console UI](./assets/exsi-vm.jpg)
 <p align="center">
   <em>ESXi Direct Console User Interface (DCUI)</em>
+</p>
+<br>
+<br>
+
+![ESXi Direct Console UI](./assets/esxi-dcui-simple-configs.jpg)
+<p align="center">
+  <em>Simple Static Configurations</em>
 </p>
 <br>
 <br>
@@ -67,6 +84,14 @@ Physical PC: Windows 10 Pro, Intel Core i5-7440HQ
 <p align="center">
   <em>Ubuntu Server Running as a Guest Virtual Machine</em>
 </p>
+<br>
+<br>
+
+![ESXi Direct Console UI](./assets/esxi-dcui-shutdown.jpg)
+<p align="center">
+  <em>ESXi Shutdown</em>
+</p>
+
 
 ## 5. Troubleshooting
 #### 1. ESXi Management Network
